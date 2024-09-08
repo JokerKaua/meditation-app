@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: 6,
-        // borderBottomWidth: 5,
-        // borderBottomColor: '#e1bbff',
         position: 'relative'
     },
     text: {
@@ -38,7 +36,6 @@ const styles = StyleSheet.create({
     labelline: {
         position: 'absolute',
         backgroundColor: '#e1bbff',
-        // width: 108,
         borderBottomRightRadius: 10,
         borderTopLeftRadius: 10,
         height: 2,

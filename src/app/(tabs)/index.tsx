@@ -12,10 +12,10 @@ export default function index() {
       <Section text='Practices' label='view all'/>
       
       <View style={styles.cardView}>
-          <Card title='Teste' label='isisaias'/>
-          <Card title='Teste' label='isisaias'/>
-          <Card title='Teste' label='isisaias'/>
-          <Card title='Teste' label='isisaias'/>
+          <Card title='Mind' label={'let\'s train it'}/>
+          <Card title='Sleep' label={'Restful sleep'}/>
+          <Card title='Relax' label='Reframe stress'/>
+          <Card title='Focus' label='Focus on work'/>
       </View>
 
 
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f9f9ff'
   },
   cardView: {
-    backgroundColor: '#f1f1ff',
+    backgroundColor: '#eeefff2d',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 12,

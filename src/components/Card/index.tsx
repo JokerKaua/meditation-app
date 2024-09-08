@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     },
     label: {
         color: '#888',
-        fontSize: 12,
+        width: '100%',
+        fontSize: 11,
         position: 'absolute',
         bottom: 6,
         marginLeft: 12,
