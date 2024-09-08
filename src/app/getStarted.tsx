@@ -1,8 +1,21 @@
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Cache } from 'react-native-cache';
+import cache from '../utils/cache';
+
+//Temporario:
+// Inicializando cache para o GetStarted
+// const cache = new Cache({
+//     namespace: 'getStartedCache',
+//     policy: {
+//         maxEntries: 100,
+//         stdTTL: 20 //tempo de vida
+//     },
+//     backend: AsyncStorage
+// })
 
 export default function getStarted() {
 
@@ -10,10 +23,11 @@ export default function getStarted() {
 
     const handleGetStarted = async () => {
         try {
-            await AsyncStorage.setItem('hasSeenGetStarted', 'true');
+            // await AsyncStorage.setItem('hasSeenGetStarted', 'true');
+            await cache.set('hasSeenGetStarted', 'true')
             router.replace('/(tabs)')
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
     }
 
