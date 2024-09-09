@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Index ({text, label}: {text: string; label:string}) {
+export default function Section ({text, label}: {text: string; label:string}) {
 
     return(
         <View style={styles.container}>
