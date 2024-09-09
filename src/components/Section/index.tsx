@@ -6,6 +6,7 @@ export default function Section ({text, label}: {text: string; label:string}) {
         <View style={styles.container}>
             <Text style={styles.text} >{text}</Text>
             <Text style={styles.label} >{label}</Text>
+            
             <View style={[styles.labelline, {width: label.length*4}]}></View>
 
         </View>

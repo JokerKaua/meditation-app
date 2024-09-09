@@ -60,9 +60,9 @@ export default function Layout() {
     return (
         //<Slot /> //estava dando erro com o botão de voltar nos headers quando acessa o user e o setting
         <Stack screenOptions={{
-            headerShown: false
+            headerShown: false,
         }}>
-
+            <Stack.Screen name='index'/>
         </Stack>
     )
 }
