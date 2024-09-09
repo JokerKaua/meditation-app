@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { router, Slot } from 'expo-router';
+import { router, Slot, Stack } from 'expo-router';
 import React, { useEffect, useState } from 'react';
 
 import { Cache } from 'react-native-cache';
@@ -58,6 +58,11 @@ export default function Layout() {
     // }
 
     return (
-        <Slot />
+        //<Slot /> //estava dando erro com o botão de voltar nos headers quando acessa o user e o setting
+        <Stack screenOptions={{
+            headerShown: false
+        }}>
+
+        </Stack>
     )
 }

@@ -1,13 +1,14 @@
 import { EvilIcons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import { Text, View, StyleSheet } from 'react-native';
 
 
 export default function Header() {
     return (
         <View style={styles.container}>
-            <EvilIcons name='user' size={40} color={'#e1bbff'} />
+            <EvilIcons name='user' size={40} color={'#e1bbff'} onPress={() => router.navigate('./details/user')} />
             <Text style={styles.text} > Hello! Welcome back!</Text>
-            <EvilIcons name='navicon' size={40} color={'#e1bbff'} />
+            <EvilIcons name='navicon' size={40} color={'#e1bbff'} onPress={() => router.navigate('./details/settings')} />
         </View>
     );
 }
